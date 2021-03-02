@@ -28,7 +28,7 @@ namespace RMotownFestival.Api
             services.AddControllers();
 
             services.AddDbContext<MotownDbContext>(
-                options => options.UseSqlServer(Configuration["ConnectionStrings: DefaultConnection"])); 
+                options => options.UseSqlServer(Configuration["ConnectionString:DefaultConnection"])); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
